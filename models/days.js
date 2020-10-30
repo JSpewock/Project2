@@ -5,9 +5,9 @@ const daySchema = Schema({
     day: {type: String, require: true},
     summary: String,
     description: String,
-    morningRec: String,
-    afternoonRec: String,
+    lessonNotes: String,
+    recording: String
 })
 
-const Day = mongoose.model('Day', daySchema)
-module.exports = Day
+const Days = mongoose.model('Days', daySchema)
+module.exports = Days
