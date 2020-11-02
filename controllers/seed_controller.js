@@ -55,12 +55,40 @@ router.get('/', (req,res)=> {
                 recording: 'https://generalassembly.zoom.us/rec/share/j8jlbNaEy9vqq1UxoTz7I0UH33LcCJUAgDT3Ctu5_DmQPgkCS_sUU0PrjngWlyo9.sQWtUvW793gwN95k'
             },
             {
+                day: 'w02d03',
+                summary: 'VSSL Mockup Pt. 1, Object Oriented Programming (OOP), Classes, Factories',
+                description: 'This lesson was focused on classes and different methods to go along with them. But, to start, we went over a VSSL mockup where much like the other mockup we did, starts with us creating the html for a webpage based on an image. Following this, in our morning lesson, we discussed classes, what they are, and why we need them. We also went over "this" and what it does as well as how to add methods to a class to use for a multitude of things. In the afternoon, we once again went over subjects that were related to classes but a specific one in particular. We discussed factories and how they\'re used to produce many objects all with similar blueprints. We also discussed inheritence and how to "extend" classes.',
+                lessonNotes: 'https://git.generalassemb.ly/seir-9-21/student-resources/tree/master/1_front_end_development/w02d03',
+                recording: 'https://generalassembly.zoom.us/rec/share/PWQWIa0NzfbAWe7VMLDsOfBuk2Xf2Um4M5_l7j3c7FfS7K2PrVHjTnb1g7jNcD_J.QIhUplP6kJfjUb-K'
+            },
+            {
+                day: 'w02d04',
+                summary: 'VSSL Mockup Pt. 2, Spacebattle',
+                description: 'We start off this day by finishing our VSSL mockup by adding some CSS to it. Nothing out of the ordinary with this excerise, the same thing we normally do for mockups. However, for both the morning and the afternoon we did one big lesson/lab. Every student was tasked with building a browser game where you battled alien space ships. This game, spacebattle, involved you, the player, deciding if you wanted to attack or retreat every turn. If you choose to attack, you attack the alien ship, followed by it attacking you, and this goes on until one or the other dies. Every alien ship had a random number of health, damage, and accuracy and you yourself had a set number of health, accuracy, and damage.',
+                lessonNotes: 'https://git.generalassemb.ly/seir-9-21/student-resources/tree/master/1_front_end_development/w02d04',
+                recording: 'There is no recording for this day'
+            },
+            {
+                day: 'w02d05',
+                summary: 'Supply Mockup, DOM intro, jQuery',
+                description: 'Today started off much like the previous days with another mockup. Our morning exercise consisted of us writing both the HTML and CSS for a website based on an image we were given. Following this, in our morning lesson, we were introduced to the DOM (Document Object Model) in our browser. We learned some DOM commands to interact with the page even though it may only be temporary. Next, in the afternoon, we learned how to link jQuery to our HTML files and use it for user interactivity. We also went over a few basic commands in jQuery to get a feel for it\'s use case.',
+                lessonNotes: 'https://git.generalassemb.ly/seir-9-21/student-resources/tree/master/1_front_end_development/w02d05',
+                recording: 'https://generalassembly.zoom.us/rec/share/fnNcxeNQwhmraJi68g9UjFW4lqpRG2hOj00lNBwrU2YCvjeKqwNSaeEE9Hun2xAy.Upxl0mzsPCL2BgOB'
+            },
+            {
+                day: 'w03d01',
+                summary: '',
+                description: '',
+                lessonNotes: '',
+                recording: ''
+            },
+            {
                 day: '',
                 summary: '',
                 description: '',
                 lessonNotes: '',
                 recording: ''
-            }
+            },
 
         ]
     )
