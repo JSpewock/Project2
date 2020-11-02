@@ -48,7 +48,18 @@ router.get('/', (req,res)=> {
                 recording: 'https://generalassembly.zoom.us/rec/share/FPQdmvdSp1_mRgdy2zkVeCWFcjYCVg1COoQAjih9iWMTZs7HtVjfeTqpo5zSigHB.tiKqoEZEWXHUsLyM'
             },
             {
-                
+                day: 'w02d02', 
+                summary: 'Intro to Flexbox, Callbacks, Array Methods with Callbacks, Debugger, setTimeout',
+                description: 'First, our morning exercise, flexbox. We basically just learned about flexbox and the commands it had to potentially make our CSS easier. Next, in the morning lesson, we went over quite a bit. We discussed higher order functions, callback functions, how to use the two together, setTimeout and how to use it, how to use Debugger both in the browser and in node, how to read errors, proper indentation, and just overall best practices with naming our code and making it readable. So, we essentially went over callback functions and how to properly organize code and name variables within it. Next, in the afternoon, we went over the many different array methods and how to use callbacks within them. This helped give us a better understanding of array methods and the best ways to use them to solve simple problems in our code.',
+                lessonNotes: 'https://git.generalassemb.ly/seir-9-21/student-resources/tree/master/1_front_end_development/w02d02',
+                recording: 'https://generalassembly.zoom.us/rec/share/j8jlbNaEy9vqq1UxoTz7I0UH33LcCJUAgDT3Ctu5_DmQPgkCS_sUU0PrjngWlyo9.sQWtUvW793gwN95k'
+            },
+            {
+                day: '',
+                summary: '',
+                description: '',
+                lessonNotes: '',
+                recording: ''
             }
 
         ]
