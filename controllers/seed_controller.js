@@ -77,7 +77,14 @@ router.get('/', (req,res)=> {
             },
             {
                 day: 'w03d01',
-                summary: 'l',
+                summary: 'Intro to Media Queries, DOM Manipulation with Functions and Loops, Populating the DOM, DOM events',
+                description: 'In this lesson we really focused on the DOM and how to manipulate it. But, before that happened, we went over media queries in our morning exercise. We essentially just went over the basics on how to change our formatting depending on the size of the screen. Then, in the morning lesson, we started to dig into the DOM. We learned how jQuery and JavaScript tie together to add data to the DOM and display it on the webpage. We also learned how to do this with loops and function to make many elements in the DOM at once. Then, in the afternoon lesson, we discussed what browser events are and how to add event listeners to listen for things like click events.',
+                lessonNotes: 'https://git.generalassemb.ly/seir-9-21/student-resources/tree/master/1_front_end_development/w03d01',
+                recording: 'https://generalassembly.zoom.us/rec/share/KV63RjZ1gdYGSXkdKbUTCLMcxnq52fRl6_oR09af8ASllQd7PD2uYvbgkUSs-YpK.kudmVNV4pffULZjq'
+            },
+            {
+                day: '',
+                summary: '',
                 description: '',
                 lessonNotes: '',
                 recording: ''
