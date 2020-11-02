@@ -77,7 +77,7 @@ router.get('/', (req,res)=> {
             },
             {
                 day: 'w03d01',
-                summary: '',
+                summary: 'l',
                 description: '',
                 lessonNotes: '',
                 recording: ''
