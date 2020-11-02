@@ -6,7 +6,8 @@ const daySchema = Schema({
     summary: String,
     description: String,
     lessonNotes: String,
-    recording: String
+    recording: String,
+    week: {type: Number, require: true}
 })
 
 const Days = mongoose.model('Days', daySchema)
