@@ -12,5 +12,8 @@
     <a href="<%=day.lessonNotes%>"><%=day.lessonNotes%></a>
     <h3>Link to Recording:</h3>
     <a href="<%=day.recording%>"><%=day.recording%></a>
+    <form action="/days/<%=day.id%>/?_method=DELETE" method="POST">
+        <input type="submit" value="Remove this Day">
+    </form>
 </body>
 </html>
