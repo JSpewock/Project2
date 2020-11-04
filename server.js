@@ -1,7 +1,7 @@
 const express = require('express');
 const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
-const app = express ();
+const app = express();
 const db = mongoose.connection;
 //___________________
 //Port
@@ -54,6 +54,9 @@ app.get('/' , (req, res) => {
 //_____________________
 const seedController = require('./controllers/seed_controller.js')
 app.use('/seed', seedController)
+
+const daysController = require('./controllers/days_controller.js')
+app.use('/days', daysController)
 
 
 //___________________
