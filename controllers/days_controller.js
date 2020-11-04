@@ -18,7 +18,16 @@ router.get('/', (req, res)=> {
 
 //new
 router.get('/new', (req,res)=> {
-    res.render('new.ejs')
+    res.render('days/new.ejs', {
+        action: '/days',
+        nameValue: '',
+        sumValue: '',
+        descValue: '',
+        lessonLink: '',
+        recLink: '',
+        weekValue: 0,
+        dayValue: 0
+    })
 })
 
 //show
