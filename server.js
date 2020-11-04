@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/'+ 'project_two_db';
 
 // Connect to Mongo
-mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true});
+mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true, useUnifiedTopology: true});
 
 // Error / success
 db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
@@ -48,6 +48,13 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 app.get('/' , (req, res) => {
   res.send('Hello World!');
 });
+
+//____________________
+//Controllers
+//_____________________
+const seedController = require('./controllers/seed_controller.js')
+app.use('/seed', seedController)
+
 
 //___________________
 //Listener
