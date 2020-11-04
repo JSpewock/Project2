@@ -15,7 +15,7 @@
                     <% for (let j = 0; j < allDays.length; j++) {%>
                         <% if (allDays[j].week === i) {%>
                                 <div id='<%=allDays[j].name%>'>
-                                <a href="/days/<%=allDays[j].name%>"><%=allDays[j].name%></a>
+                                <a href="/days/<%=allDays[j].id%>"><%=allDays[j].name%></a>
                                 <p><%=allDays[j].summary%></p>
                                 </div>
                         <%}%>
