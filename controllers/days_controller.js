@@ -25,8 +25,15 @@ router.get('/new', (req,res)=> {
         descValue: '',
         lessonLink: '',
         recLink: '',
-        weekValue: 0,
-        dayValue: 0
+        weekValue: 1,
+        dayValue: 1
+    })
+})
+
+//create
+router.post('/', (req,res)=> {
+    Days.create(req.body, (err)=> {
+        res.redirect('/days')
     })
 })
 
