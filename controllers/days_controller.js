@@ -40,15 +40,15 @@ router.post('/', (req,res)=> {
 //edit
 router.get('/:id/edit', (req,res)=> {
     Days.findById(req.params.id, (err, foundDay)=> {
-        res.render('edit.ejs', {
-            action: '/days',
-            nameValue: '',
-            sumValue: '',
-            descValue: '',
-            lessonLink: '',
-            recLink: '',
-            weekValue: 1,
-            dayValue: 1
+        res.render('days/edit.ejs', {
+            action: `/days/${foundDay.id}/?_method=PUT`,
+            nameValue: foundDay.name,
+            sumValue: foundDay.summary,
+            descValue: foundDay.description,
+            lessonLink: foundDay.lessonNotes,
+            recLink: foundDay.recording,
+            weekValue: foundDay.week,
+            dayValue: foundDay.day
         })
     })
 })
