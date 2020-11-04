@@ -37,6 +37,24 @@ router.post('/', (req,res)=> {
     })
 })
 
+//edit
+router.get('/:id/edit', (req,res)=> {
+    Days.findById(req.params.id, (err, foundDay)=> {
+        res.render('edit.ejs', {
+            action: '/days',
+            nameValue: '',
+            sumValue: '',
+            descValue: '',
+            lessonLink: '',
+            recLink: '',
+            weekValue: 1,
+            dayValue: 1
+        })
+    })
+})
+
+//update
+
 //show
 router.get('/:id', (req,res)=> {
     Days.findById(req.params.id, (err, foundDay)=> {
