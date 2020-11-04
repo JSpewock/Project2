@@ -6,14 +6,19 @@
     <title>Index</title>
 </head>
 <body>
-    <ul>
+    <!-- loop to make 12 divs for the 12 weeks -->
         <% for (let i = 1; i <= 12; i++) {%>
-        <li>
             <div>
                 <h2>Week <%=i%></h2>
+                <ul>
+                    <!-- loop to make an li for each day -->
+                    <% for (let j = 0; j < allDays.length; j++) {%>
+                        <% if (allDays[j].week === i) {%>
+                            <li><%=allDays[j].name%></li>
+                        <%}%>
+                    <%}%>
+                </ul>
             </div>
-        </li>
         <%}%>
-    </ul>
 </body>
 </html>

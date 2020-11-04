@@ -1,13 +1,13 @@
 const express = require('express')
 const Days = require('../models/days.js')
-const days = express.Router()
+const router = express.Router()
 
 //ROUTES
 //index
-days.get('/', (req, res)=> {
+router.get('/', (req, res)=> {
     Days.find({}, (err, foundDays)=> {
         if (err) {
-            console.log(err)
+            console.log('error=',err)
         } else{
             res.render('days/index.ejs', {
                 allDays: foundDays
@@ -15,3 +15,5 @@ days.get('/', (req, res)=> {
         }
     })
 })
+
+module.exports = router
