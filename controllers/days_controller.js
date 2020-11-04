@@ -60,13 +60,19 @@ router.put('/:id', (req,res)=> {
     })
 })
 
-
 //show
 router.get('/:id', (req,res)=> {
     Days.findById(req.params.id, (err, foundDay)=> {
         res.render('days/show.ejs', {
             day: foundDay
         })
+    })
+})
+
+//delete
+router.delete('/:id', (req,res)=> {
+    Days.findByIdAndRemove(req.params.id, (err)=>{
+        res.redirect('/days')
     })
 })
 
