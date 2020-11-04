@@ -8,13 +8,16 @@
 <body>
     <!-- loop to make 12 divs for the 12 weeks -->
         <% for (let i = 1; i <= 12; i++) {%>
-            <div>
+            <div id="week<%=i%>">
                 <h2>Week <%=i%></h2>
                 <ul>
                     <!-- loop to make an li for each day -->
                     <% for (let j = 0; j < allDays.length; j++) {%>
                         <% if (allDays[j].week === i) {%>
-                            <li><%=allDays[j].name%></li>
+                                <div id='<%=allDays[j].name%>'>
+                                <a href="/days/<%=allDays[j].name%>"><%=allDays[j].name%></a>
+                                <p><%=allDays[j].summary%></p>
+                                </div>
                         <%}%>
                     <%}%>
                 </ul>
