@@ -16,4 +16,13 @@ router.get('/', (req, res)=> {
     })
 })
 
+//show
+router.get('/:id', (req,res)=> {
+    Days.find({name: req.params.id}, (err, foundDay)=> {
+        res.render('days/show.ejs', {
+            day: foundDay
+        })
+    })
+})
+
 module.exports = router
