@@ -54,6 +54,12 @@ router.get('/:id/edit', (req,res)=> {
 })
 
 //update
+router.put('/:id', (req,res)=> {
+    Days.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err)=> {
+        res.redirect('/days/' + req.params.id)
+    })
+})
+
 
 //show
 router.get('/:id', (req,res)=> {
