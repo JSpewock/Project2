@@ -1,0 +1,17 @@
+<form action=<%=action%> method='POST'>
+<label for="name">Name:</label>
+<input type="text" name="name" value="<%=nameValue%>">
+<label for="summary">Summary:</label>
+<input type="text" name="summary" value="<%=sumValue%>">
+<label for="description">Description</label>
+<input type="textarea" name="description" value="<%=descValue%>">
+<label for="lessonNotes">Link to lesson notes:</label>
+<input type="text" name="lessonNotes" value="<%=lessonValue%>">
+<label for="recording">Link to zoom recording:</label>
+<input type="text" name="recording" value="<%=recLink%>">
+<label for="week">Week:</label>
+<input type="number" name="week" value="<%=weekValue%>" min="1" max="12">
+<label for="day">Day:</label>
+<input type="number" name="day" value="<%=dayValue%>" min="1" max="5">
+<input type="submit" value="Submit Day">
+</form>

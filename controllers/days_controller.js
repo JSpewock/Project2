@@ -16,6 +16,11 @@ router.get('/', (req, res)=> {
     })
 })
 
+//new
+router.get('/new', (req,res)=> {
+    res.render('new.ejs')
+})
+
 //show
 router.get('/:id', (req,res)=> {
     Days.findById(req.params.id, (err, foundDay)=> {
