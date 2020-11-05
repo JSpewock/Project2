@@ -10,6 +10,7 @@ router.get('/', (req, res)=> {
             console.log('error=',err)
         } else{
             res.render('days/index.ejs', {
+                currentUser: req.session.currentUser,
                 allDays: foundDays
             })
         }
@@ -19,6 +20,7 @@ router.get('/', (req, res)=> {
 //new
 router.get('/new', (req,res)=> {
     res.render('days/new.ejs', {
+        currentUser: req.session.currentUser,
         action: '/days',
         nameValue: '',
         sumValue: '',
@@ -41,6 +43,7 @@ router.post('/', (req,res)=> {
 router.get('/:id/edit', (req,res)=> {
     Days.findById(req.params.id, (err, foundDay)=> {
         res.render('days/edit.ejs', {
+            currentUser: req.session.currentUser,
             action: `/days/${foundDay.id}/?_method=PUT`,
             nameValue: foundDay.name,
             sumValue: foundDay.summary,
@@ -64,6 +67,7 @@ router.put('/:id', (req,res)=> {
 router.get('/:id', (req,res)=> {
     Days.findById(req.params.id, (err, foundDay)=> {
         res.render('days/show.ejs', {
+            currentUser: req.session.currentUser,
             day: foundDay
         })
     })
