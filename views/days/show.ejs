@@ -17,10 +17,6 @@
         <h3>Link to Recording:</h3>
         <a href="<%=day.recording%>"><%=day.recording%></a>
         <div id="buttons">
-            <form action="/days" method="GET">
-                <input type="submit" value="Back to Index">
-            </form>
-
             <form action="/days/<%=day.id%>/edit" method="get">
             <input type="submit" value="Edit this Day">
             </form>
