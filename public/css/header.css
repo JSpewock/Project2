@@ -35,7 +35,11 @@ body {
     display: inline-block;
     padding: 0 10px;
 }
-.header-nav > a {
+.nav-links {
     color: rgb(151, 151, 151);
     text-decoration: none;
+}
+.nav-links:hover {
+    color: black;
+    transition: 0.2s ease-in;
 }
