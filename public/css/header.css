@@ -39,9 +39,11 @@ body {
     padding: 0 10px;
 }
 .nav-links {
-    color: rgb(151, 151, 151);
+    color: red;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
 }
 .nav-links:hover {
     color: black;
