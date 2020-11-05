@@ -31,18 +31,22 @@ h2 {
     border: 3px solid #74c4cc;
     border-radius: 10px;
 }
-a {
-    font-size: 20px;
-    color: blue;
-}
 #week1 {
     margin-bottom: 15px;
     padding-bottom: 20px;
 }
 #week1-container {
-    margin-top: 150px;
+    margin-top: 20px;
 }
 
+/* styles for links */
+#new-link, .show-links {
+    font-size: 20px;
+    color: blue;
+}
+#new-link-div {
+    margin-top: 150px;
+}
 
 /* styles for project weeks */
 

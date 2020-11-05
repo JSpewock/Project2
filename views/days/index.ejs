@@ -9,7 +9,9 @@
 </head>
 <body>
     <%- include ('../partials/header.ejs') %>
-
+    <div id="new-link-div">
+        <a href="/days/new" id="new-link">Add a new Day</a>
+    </div>
     <!-- loop to make 12 divs for the 12 weeks -->
         <% for (let i = 1; i <= 12; i++) {%>
         <div class="container" id="week<%=i%>-container">
@@ -19,7 +21,7 @@
                     <% for (let j = 0; j < allDays.length; j++) {%>
                         <% if (allDays[j].week === i) {%>
                                 <div id='<%=allDays[j].name%>' class="dayDiv">
-                                <a href="/days/<%=allDays[j].id%>"><%=allDays[j].name%></a>
+                                <a href="/days/<%=allDays[j].id%>" class="show-links"><%=allDays[j].name%></a>
                                 <p><%=allDays[j].summary%></p>
                                 </div>
                         <%}%>
@@ -27,6 +29,5 @@
             </div>
         </div>
         <%}%>
-        <a href="/days/new">Add a new Day</a>
 </body>
 </html>
