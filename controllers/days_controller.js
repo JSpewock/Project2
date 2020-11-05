@@ -34,9 +34,19 @@ router.get('/new', (req,res)=> {
 
 //create
 router.post('/', (req,res)=> {
-    Days.create(req.body, (err)=> {
-        res.redirect('/days')
-    })
+    //Check if a user is signed in
+    if (req.session.currentUser) {
+        //check if that user is the admin login
+        if (req.session.currentUser.username === 'userAdmin0956') {
+            Days.create(req.body, (err)=> {
+                res.redirect('/days')
+            })
+        } else { //If it's not the admin, redirect
+            res.redirect('/')
+        }
+    } else { //if there is no one signed in, redirect
+        res.redirect('/')
+    }
 })
 
 //edit
@@ -58,9 +68,19 @@ router.get('/:id/edit', (req,res)=> {
 
 //update
 router.put('/:id', (req,res)=> {
-    Days.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err)=> {
-        res.redirect('/days/' + req.params.id)
-    })
+    //Check if a user is signed in
+    if (req.session.currentUser) {
+        //check if that user is the admin login
+        if (req.session.currentUser.username === 'userAdmin0956') {
+            Days.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err)=> {
+                res.redirect('/days/' + req.params.id)
+            })
+        } else { //If it's not the admin, redirect
+            res.redirect('/')
+        }
+    } else { //if there is no one signed in, redirect
+        res.redirect('/')
+    }
 })
 
 //show

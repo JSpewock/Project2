@@ -40,13 +40,11 @@ h2 {
 }
 
 /* styles for links */
-#new-link, .show-links {
+.show-links {
     font-size: 20px;
     color: blue;
 }
-/* #new-link-div {
-    margin-top: 150px;
-} */
+
 
 /* styles for project weeks */
 
