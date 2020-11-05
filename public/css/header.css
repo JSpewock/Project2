@@ -9,6 +9,7 @@ body {
     justify-content: space-between;
     background-color: white;
     padding: 10px;
+    /* inspiration for the fixed positioning taken from https://www.w3.org/Style/Examples/007/menus.en.html */
     position: fixed;
     top: 0;
     left: 0;
