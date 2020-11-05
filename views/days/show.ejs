@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/show.css">
+    <link rel="stylesheet" href="/css/header.css">
     <title>Document</title>
 </head>
 <body>
-    <h1><%=day.name%></h1>
-    <p><%=day.description%></p>
-    <h3 id="notes-link">Link to Notes:</h3>
-    <a href="<%=day.lessonNotes%>"><%=day.lessonNotes%></a>
-    <h3>Link to Recording:</h3>
-    <a href="<%=day.recording%>"><%=day.recording%></a>
-    <div id="buttons">
-        <form action="/days" method="GET">
-            <input type="submit" value="Back to Index">
-        </form>
+    <%- include ('../partials/header.ejs')%>
+    <div class="container">
+        <h1><%=day.name%></h1>
+        <p><%=day.description%></p>
+        <h3 id="notes-link">Link to Notes:</h3>
+        <a href="<%=day.lessonNotes%>"><%=day.lessonNotes%></a>
+        <h3>Link to Recording:</h3>
+        <a href="<%=day.recording%>"><%=day.recording%></a>
+        <div id="buttons">
+            <form action="/days" method="GET">
+                <input type="submit" value="Back to Index">
+            </form>
 
-        <form action="/days/<%=day.id%>/edit" method="get">
-        <input type="submit" value="Edit this Day">
-        </form>
-        <form action="/days/<%=day.id%>/?_method=DELETE" method="POST">
-            <input type="submit" value="Remove this Day">
-        </form>
+            <form action="/days/<%=day.id%>/edit" method="get">
+            <input type="submit" value="Edit this Day">
+            </form>
+            <form action="/days/<%=day.id%>/?_method=DELETE" method="POST">
+                <input type="submit" value="Remove this Day">
+            </form>
+        </div>
     </div>
 </body>
 </html>

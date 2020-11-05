@@ -5,7 +5,7 @@
 body {
     background-color: #eee;
 }
-h1 {
+.container > h1 {
     font-family: 'Poppins', sans-serif;
     border-bottom: 2px solid #74c4cc;
 }
@@ -40,7 +40,7 @@ input:focus {
 }
 .container {
     width: 400px;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 form {
     border: 1px solid rgb(151, 151, 151);
