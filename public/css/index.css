@@ -36,7 +36,7 @@ h2 {
     padding-bottom: 20px;
 }
 #week1-container {
-    margin-top: 20px;
+    margin-top: 200px;
 }
 
 /* styles for links */
@@ -44,9 +44,9 @@ h2 {
     font-size: 20px;
     color: blue;
 }
-#new-link-div {
+/* #new-link-div {
     margin-top: 150px;
-}
+} */
 
 /* styles for project weeks */
 

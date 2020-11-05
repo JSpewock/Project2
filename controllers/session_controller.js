@@ -4,7 +4,6 @@ const bcrypt = require('bcrypt')
 const User = require('../models/users.js')
 
 router.get('/new', (req,res)=> {
-    req.session.destroy()
     res.render('sessions/new.ejs', {
         currentUser: req.session.currentUser
     })

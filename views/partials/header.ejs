@@ -7,6 +7,20 @@
     <div class="header-nav">
         <ul>
             <li><a href="/days" class="nav-links">Back to Index</a></li>
+            <% if (currentUser) {%>
+                <li>Welcome <%=currentUser.username%></li>
+                <% if (currentUser.username === 'userAdmin0956') {%>
+                    <li><a href="/days/new" id="new-link">Add a new Day</a></li>
+                <%}%>
+                <li>
+                    <form action="/sessions/?_method=DELETE" method="POST">
+                        <input type="submit" value="Log Out">
+                    </form>
+                </li>
+            <%} else {%>
+                <li><a href="/users/new">Sign Up</a></li>
+                <li><a href="/sessions/new">Log In</a></li>
+            <%}%>
         </ul>
     </div>
 </div>

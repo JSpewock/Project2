@@ -74,6 +74,9 @@ app.use('/days', daysController)
 const usersController = require('./controllers/users_controller.js')
 app.use('/users', usersController)
 
+const sessionsController = require('./controllers/session_controller.js')
+app.use('/sessions', sessionsController)
+
 //___________________
 //Listener
 //___________________
