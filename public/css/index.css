@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    /* took this color from the kingsman auth app in our homework */
+    background: #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weekDiv {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+}
+.dayDiv {
+    background-color: grey;
+    width: 40%;
+    height: 25%;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+a {
+    font-size: 20px;
+}
+#week1 {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+.containter {
+    background-color: red;
+    padding: 10px;
+}
+#week4, #week7 {
+    height: 300px;
+}
+#week4 > div, #week7 > div {
+    height: 80%;
+}
+#week7 {
+    height: 300px;
+}
+#week7 > div {
+    height: 80%;
+}
+#week8, #week9, #week10, #week11, #week12 {
+    display: none;
+}
