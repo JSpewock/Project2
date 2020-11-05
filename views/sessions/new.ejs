@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sign-in.css">
+    <link rel="stylesheet" href="/css/header.css">
     <title>Log In</title>
 </head>
 <body>
-    <h1>Log In</h1>
-    <form action="/sessions" method="POST">
-        <label for="username">Username</label>
-        <input type="text" name="username">
-        <label for="password">Password</label>
-        <input type="password" name="password">
-        <input type="submit" value="Log In">
-    </form>
+    <%- include ('../partials/header.ejs')%>
+    <div class="container">
+        <h1>Log In</h1>
+        <form action="/sessions" method="POST" id="form">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="sign-in-input">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="sign-in-input">
+            <input type="submit" value="Log In" id="submit">
+        </form>
+    </div>
 </body>
 </html>

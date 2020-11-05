@@ -16,6 +16,7 @@
             <div id="week<%=i%>" class="weekDiv">
                     <!-- loop to make an li for each day -->
                     <% for (let j = 0; j < allDays.length; j++) {%>
+                        <!-- if the value of week on the day object matches the week div, append it -->
                         <% if (allDays[j].week === i) {%>
                                 <div id='<%=allDays[j].name%>' class="dayDiv">
                                 <a href="/days/<%=allDays[j].id%>" class="show-links"><%=allDays[j].name%></a>

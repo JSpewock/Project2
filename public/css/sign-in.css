@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+body {
+    background-color: #eee;
+}
+.container > h1 {
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid #74c4cc;
+}
+label {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+.sign-in-input {
+    width: 100%;
+    box-sizing: border-box;
+}
+#submit {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #74c4cc;
+    box-shadow: 3px 3px rgb(151, 151, 151);
+}
+.container {
+    width: 400px;
+    margin: 150px auto;
+}
+#form {
+    border: 1px solid rgb(151, 151, 151);
+}
