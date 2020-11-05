@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Index</title>
 </head>
 <body>
+    <!-- inspiration for the headre comes from our kingsman tailor homework https://git.generalassemb.ly/seir-9-21/student-resources/blob/master/2_full_stack_dev/w06d03/homework/README.md -->
+    <div class="header">
+        <div class="header-title">
+            <img src="/images/logo.jpeg" id="ga-logo">
+            <h1 id="h-title">General Assembly Catelog</h1>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li><a href="/days">Back to Index</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- loop to make 12 divs for the 12 weeks -->
         <% for (let i = 1; i <= 12; i++) {%>
-        <div class="container">
-            <h2>Week <%=i%></h2>
+        <div class="container" id="week<%=i%>-container">
+            <h2 id="week<%=i%>-title">Week <%=i%></h2>
             <div id="week<%=i%>" class="weekDiv">
                     <!-- loop to make an li for each day -->
                     <% for (let j = 0; j < allDays.length; j++) {%>

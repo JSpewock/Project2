@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    /* took this color from the kingsman auth app in our homework */
+    background: #eee;
+    font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+p {
+    max-width: 45%;
+    margin: 0 auto;
+}
+#buttons {
+    /* display: inline; */
+    margin-top: 100px;
+}
+form {
+    display: inline;
+}
+a {
+    color: blue;
+}
+#notes-link {
+    margin-top: 80px;
+}

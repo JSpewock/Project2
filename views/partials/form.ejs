@@ -1,17 +1,26 @@
+
 <form action=<%=action%> method='POST'>
-<label for="name">Name:</label>
-<input type="text" name="name" value="<%=nameValue%>">
-<label for="summary">Summary:</label>
-<input type="text" name="summary" value="<%=sumValue%>">
-<label for="description">Description</label>
-<textarea name="description"><%=descValue%></textarea>
-<label for="lessonNotes">Link to lesson notes:</label>
-<input type="text" name="lessonNotes" value="<%=lessonLink%>">
-<label for="recording">Link to zoom recording:</label>
-<input type="text" name="recording" value="<%=recLink%>">
-<label for="week">Week:</label>
-<input type="number" name="week" value="<%=weekValue%>" min="1" max="12">
-<label for="day">Day:</label>
-<input type="number" name="day" value="<%=dayValue%>" min="1" max="5">
-<input type="submit" value="Submit Day">
+    <!-- name of day -->
+    <label for="name">Name</label>
+    <input type="text" name="name" value="<%=nameValue%>">
+    <!-- summary of day -->
+    <label for="summary">Summary</label>
+    <input type="text" name="summary" value="<%=sumValue%>">
+    <!-- description of day -->
+    <label for="description">Description</label>
+    <textarea name="description"><%=descValue%></textarea>
+    <!-- link to lesson notes -->
+    <label for="lessonNotes">Link to lesson notes</label>
+    <input type="text" name="lessonNotes" value="<%=lessonLink%>">
+    <!-- link to zoom recording -->
+    <label for="recording">Link to zoom recording</label>
+    <input type="text" name="recording" value="<%=recLink%>">
+    <!-- week number -->
+    <label for="week">Week</label>
+    <input type="number" name="week" value="<%=weekValue%>" min="1" max="12">
+    <!-- day number -->
+    <label for="day">Day</label>
+    <input type="number" name="day" value="<%=dayValue%>" min="1" max="5">
+    <!-- submit -->
+    <input type="submit" value="Submit Day">
 </form>
