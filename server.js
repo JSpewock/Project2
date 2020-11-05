@@ -4,6 +4,7 @@ const mongoose = require ('mongoose');
 const app = express();
 const db = mongoose.connection;
 const session = require('express-session')
+require('dotenv').config()
 //___________________
 //Port
 //___________________
@@ -43,6 +44,17 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 
 //___________________
+//Session
+//___________________
+app.use(
+  session({
+    secret: process.env.SECRET, //a random string do not copy this value or your stuff will get hacked
+    resave: false, // default more info: https://www.npmjs.com/package/express-session#resave
+    saveUninitialized: false // default  more info: https://www.npmjs.com/package/express-session#resave
+  })
+)
+
+//___________________
 // Routes
 //___________________
 //localhost:3000
@@ -59,6 +71,8 @@ app.use('/seed', seedController)
 const daysController = require('./controllers/days_controller.js')
 app.use('/days', daysController)
 
+const usersController = require('./controllers/users_controller.js')
+app.use('/users', usersController)
 
 //___________________
 //Listener
